@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First random bing search</title>
+    <style>
+        input,button{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.bing.com/news/search">
+        <input type="text" name="q">
+        <button>Submit</button>
+    </form>
+    <script>
+        searchList = [
+    "Weather forecast",
+    "Google maps",
+    "YouTube",
+    "Amazon prime video",
+    "Facebook login",
+    "Instagram login",
+    "Twitter login",
+    "Wikipedia",
+    "ESPN",
+    "CNN news",
+    "BBC news",
+    "Al Jazeera news",
+    "Fox news",
+    "NBC news",
+    "ABC news",
+    "CBS news",
+    "Weather channel",
+    "AccuWeather",
+    "The weather network",
+    "MapQuest",
+    "Waze",
+    "Google drive",
+    "Dropbox",
+    "Microsoft office",
+    "Adobe creative cloud",
+    "Netflix",
+    "Hulu",
+    "Disney+",
+    "HBO max",
+    "Apple music",
+    "Spotify",
+    "Amazon music",
+    "Google photos",
+    "iCloud",
+    "Microsoft outlook",
+    "Gmail",
+    "Yahoo mail",
+    "AOL mail",
+    "LinkedIn",
+    "Indeed",
+    "Glassdoor",
+    "Monster",
+    "CareerBuilder",
+    "ZipRecruiter",
+    "LinkedIn jobs",
+    "Google jobs",
+    "Facebook jobs",
+    "Twitter jobs",
+    "Indeed jobs",
+    "Simply hired",
+    "Space Exploration",
+    "Artificial Intelligence",
+    "Climate Change",
+    "Quantum Physics",
+    "Ancient Civilizations",
+    "Cryptocurrency",
+    "Virtual Reality",
+    "Augmented Reality",
+    "Robotics",
+    "Neuroscience",
+    "Psychology",
+    "Philosophy",
+    "History of Art",
+    "Music Theory",
+    "Film Making",
+    "Writing",
+    "Poetry",
+    "Photography",
+    "Travel",
+    "Food Culture",
+    "Sustainability",
+    "Renewable Energy",
+    "Entrepreneurship",
+    "Business Strategy",
+    "Marketing",
+    "Economics",
+    "Politics",
+    "Social Justice",
+    "Human Rights",
+    "Environmental Conservation",
+    "Wildlife Preservation",
+    "Oceanography",
+    "Geology",
+    "Meteorology",
+    "Astronomy",
+    "Astrology",
+    "Mythology",
+    "Folklore",
+    "Cultural Anthropology",
+    "Archaeology",
+    "History of Science",
+    "Medicine",
+    "Biotechnology",
+    "Genetics",
+    "Evolutionary Biology",
+    "Ecology",
+    "Zoology",
+    "Botany",
+    "Mathematics",
+    "Computer Science"
+]
+
+        let inp = document.querySelector('input');
+        let randIndx = Math.floor(Math.random()*searchList.length);
+        inp.value = searchList[randIndx];
+        console.log(inp.value);
+
+        let btn = document.querySelector('button').click();
+    </script>
+</body>
+</html>
